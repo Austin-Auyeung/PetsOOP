@@ -23,6 +23,7 @@ while (input != "4")
             Console.WriteLine("1. Add a new Cat");
             Console.WriteLine("2. Add a new Chimpanzee");
             Console.WriteLine("3. Add a new Turtle");
+            Console.WriteLine("4. Add a new Snail");
             string input2 = Console.ReadLine();
             switch (input2)
             {
@@ -34,6 +35,9 @@ while (input != "4")
                     break;
                 case "3":
                     Turtle newTurtle = new Turtle(petName);
+                    break;
+                case "4":
+                    Snail newSnail = new Snail(petName);
                     break;
             }
             break;
